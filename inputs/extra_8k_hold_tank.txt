@@ -1,0 +1,829 @@
+
+                                      ARENA Simulation Results
+                                                 LTS
+
+                                  Summary for Replication 1 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/19/2023
+Analyst: LTS                                                         Model revision date: 4/19/2023
+
+Replication ended at time      : 1440.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Throughput Time Not Private Label           76.498     (Corr)     3.6691     218.24       1338    
+Throughput Time Private Label                   --         --         --         --          0
+Order.VATime                                1.7450     .03766     .00000     20.893       8233    
+Order.NVATime                               .00000     .00000     .00000     .00000       8233    
+Order.WaitTime                              13.103     (Corr)     .00000     211.65       8233    
+Order.TranTime                              .22931     .00489     .00000     2.3823       8233    
+Order.OtherTime                             .15799     .00216     .00000     .39996       8233    
+Order.TotalTime                             15.235     (Corr)     .00000     218.24       8233    
+PrivateOrder.VATime                             --         --         --         --          0
+PrivateOrder.NVATime                            --         --         --         --          0
+PrivateOrder.WaitTime                           --         --         --         --          0
+PrivateOrder.TranTime                           --         --         --         --          0
+PrivateOrder.OtherTime                          --         --         --         --          0
+PrivateOrder.TotalTime                          --         --         --         --          0
+Match QGB per Order.Queue1.WaitingTime      1.2746     .24117     .00000     10.383       1338    
+Match QGB per Order.Queue2.WaitingTime      4.1260     .75935     .00000     19.200       1338    
+Match QGB per Order.Queue3.WaitingTime      7.9231     .51775     .24904     22.361       1338    
+Hold for Quart Line.Queue.WaitingTime       4.4079     .44992     .00392     15.568        897    
+Seize 20k Hold Tank.Queue.WaitingTime       .08581     .14504     .00000     9.9478        499    
+Hold for Bucket Line.Queue.WaitingTime      .18436     (Insuf)    .03099     .55785         15    
+Hold for Thin.Queue.WaitingTime             4.0815     .30731     .00434     14.666       1317    
+Mix and Grind.Queue.WaitingTime             56.375     (Corr)     .00000     117.13       1355    
+Seize 6k.Queue.WaitingTime                  .00000     .00000     .00000     .00000        399    
+Hold for Gallon Line.Queue.WaitingTime      1.6263     .21048     .00621     7.5200        675    
+Seize 8k Hold Tank.Queue.WaitingTime        .00000     .00000     .00000     .00000        437    
+Seize and Delay Buckets.Queue.WaitingTime   .00000     .00000     .00000     .00000        520    
+Hold for Hold Tank.Queue.WaitingTime        3.9003     .32963     .00587     13.697       1315    
+Seize 20k.Queue.WaitingTime                 .00000     .00000     .00000     .00000        383    
+Seize 12k Hold Tank.Queue.WaitingTime       .00000     .00000     .00000     .00000        407    
+Seize and Delay Gallons.Queue.WaitingTime   .00000     .00000     .00000     .00000       1343    
+Seize and Delay Quarts.Queue.WaitingTime    .00000     .00000     .00000     .00000       1014    
+Seize 14k.Queue.WaitingTime                 .00000     (Insuf)    .00000     .00000        261    
+Seize 10k.Queue.WaitingTime                 .00000     (Insuf)    .00000     .00000        306    
+Hold for 6k or 10k.Queue.WaitingTime            --         --         --         --          0
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Order.WIP                                   92.316     (Corr)     .00000     150.00     149.00    
+PrivateOrder.WIP                            .00000     (Insuf)    .00000     1.0000     .00000    
+BucketLine.NumberBusy                       .30388     .02384     .00000     2.0000     .00000    
+BucketLine.NumberScheduled                  2.0000     (Insuf)    2.0000     2.0000     2.0000    
+BucketLine.Utilization                      .15194     .01192     .00000     1.0000     .00000    
+Hold20k.NumberBusy                          3.8015     (Insuf)    .00000     4.0000     4.0000    
+Hold20k.NumberScheduled                     4.0000     (Insuf)    4.0000     4.0000     4.0000    
+Hold20k.Utilization                         .95038     (Insuf)    .00000     1.0000     1.0000    
+Hold8k.NumberBusy                           2.0423     .14883     .00000     3.0000     1.0000    
+Hold8k.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Hold8k.Utilization                          .68079     .04961     .00000     1.0000     .33333    
+Thin10k.NumberBusy                          .77140     .13933     .00000     2.0000     .00000    
+Thin10k.NumberScheduled                     2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin10k.Utilization                         .38570     .06966     .00000     1.0000     .00000    
+QuartLine.NumberBusy                        3.8724     (Insuf)    .00000     4.0000     3.0000    
+QuartLine.NumberScheduled                   4.0000     (Insuf)    4.0000     4.0000     4.0000    
+QuartLine.Utilization                       .96812     (Insuf)    .00000     1.0000     .75000    
+Thin14k.NumberBusy                          1.4201     .09472     .00000     2.0000     2.0000    
+Thin14k.NumberScheduled                     2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin14k.Utilization                         .71008     .04736     .00000     1.0000     1.0000    
+MixAndGrind.NumberBusy                      6.9126     (Insuf)    .00000     7.0000     7.0000    
+MixAndGrind.NumberScheduled                 7.0000     (Insuf)    7.0000     7.0000     7.0000    
+MixAndGrind.Utilization                     .98753     (Insuf)    .00000     1.0000     1.0000    
+Hold12k.NumberBusy                          2.5297     .26001     .00000     4.0000     .00000    
+Hold12k.NumberScheduled                     4.0000     (Insuf)    4.0000     4.0000     4.0000    
+Hold12k.Utilization                         .63243     .06500     .00000     1.0000     .00000    
+Thin20k.NumberBusy                          2.8670     (Insuf)    .00000     3.0000     3.0000    
+Thin20k.NumberScheduled                     3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Thin20k.Utilization                         .95568     (Insuf)    .00000     1.0000     1.0000    
+GallonLine.NumberBusy                       3.2065     .15693     .00000     4.0000     3.0000    
+GallonLine.NumberScheduled                  4.0000     (Insuf)    4.0000     4.0000     4.0000    
+GallonLine.Utilization                      .80164     .03923     .00000     1.0000     .75000    
+Thin6k.NumberBusy                           .75106     .11718     .00000     2.0000     1.0000    
+Thin6k.NumberScheduled                      2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin6k.Utilization                          .37553     .05859     .00000     1.0000     .50000    
+Match QGB per Order.Queue1.NumberInQueue    1.1904     .26027     .00000     8.0000     2.0000    
+Match QGB per Order.Queue2.NumberInQueue    3.8384     .63987     .00000     11.000     2.0000    
+Match QGB per Order.Queue3.NumberInQueue    7.3772     .38027     .00000     11.000     5.0000    
+Hold for Quart Line.Queue.NumberInQueue     2.7457     .50589     .00000     8.0000     .00000    
+Seize 20k Hold Tank.Queue.NumberInQueue     .02974     (Insuf)    .00000     3.0000     .00000    
+Hold for Bucket Line.Queue.NumberInQueue    .00192     (Insuf)    .00000     1.0000     .00000    
+Hold for Thin.Queue.NumberInQueue           3.7380     .25130     .00000     7.0000     4.0000    
+Mix and Grind.Queue.NumberInQueue           56.814     (Corr)     .00000     122.00     122.00    
+Seize 6k.Queue.NumberInQueue                .00000     (Insuf)    .00000     .00000     .00000    
+Hold for Gallon Line.Queue.NumberInQueue    .76237     .27884     .00000     7.0000     .00000    
+Seize 8k Hold Tank.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Buckets.Queue.NumberInQueu  .00000     (Insuf)    .00000     .00000     .00000    
+Hold for Hold Tank.Queue.NumberInQueue      3.5666     .28829     .00000     9.0000     4.0000    
+Seize 20k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Seize 12k Hold Tank.Queue.NumberInQueue     .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Gallons.Queue.NumberInQueu  .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Quarts.Queue.NumberInQueue  .00000     (Insuf)    .00000     .00000     .00000    
+Seize 14k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Seize 10k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Hold for 6k or 10k.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+Late Orders Private Label                         0  Infinite
+On Time Orders Private Label                      0  Infinite
+Late Orders                                     726  Infinite
+On Time Orders                                  612  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Order.NumberIn                              8382.0    
+Order.NumberOut                             8233.0    
+PrivateOrder.NumberIn                       61.000    
+PrivateOrder.NumberOut                      61.000    
+BucketLine.NumberSeized                     520.00    
+BucketLine.ScheduledUtilization             .15194    
+Hold20k.NumberSeized                        499.00    
+Hold20k.ScheduledUtilization                .95038    
+Hold8k.NumberSeized                         437.00    
+Hold8k.ScheduledUtilization                 .68079    
+Thin10k.NumberSeized                        306.00    
+Thin10k.ScheduledUtilization                .38570    
+QuartLine.NumberSeized                      1014.0    
+QuartLine.ScheduledUtilization              .96812    
+Thin14k.NumberSeized                        261.00    
+Thin14k.ScheduledUtilization                .71008    
+MixAndGrind.NumberSeized                    1355.0    
+MixAndGrind.ScheduledUtilization            .98753    
+Hold12k.NumberSeized                        407.00    
+Hold12k.ScheduledUtilization                .63243    
+Thin20k.NumberSeized                        383.00    
+Thin20k.ScheduledUtilization                .95568    
+GallonLine.NumberSeized                     1343.0    
+GallonLine.ScheduledUtilization             .80164    
+Thin6k.NumberSeized                         399.00    
+Thin6k.ScheduledUtilization                 .37553    
+System.NumberOut                            8233.0    
+
+Beginning replication 2 of 5
+
+                                      ARENA Simulation Results
+                                                 LTS
+
+                                  Summary for Replication 2 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/19/2023
+Analyst: LTS                                                         Model revision date: 4/19/2023
+
+Replication ended at time      : 1440.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Throughput Time Not Private Label           61.069     (Corr)     3.2999     167.23       1267    
+Throughput Time Private Label                   --         --         --         --          0
+Order.VATime                                1.7674     .04468     .00000     19.774       7806    
+Order.NVATime                               .00000     .00000     .00000     .00000       7806    
+Order.WaitTime                              10.480     (Corr)     .00000     148.31       7806    
+Order.TranTime                              .23081     .00562     .00000     2.4143       7806    
+Order.OtherTime                             .15819     (Corr)     .00000     .39994       7806    
+Order.TotalTime                             12.636     (Corr)     .00000     167.57       7806    
+PrivateOrder.VATime                             --         --         --         --          0
+PrivateOrder.NVATime                            --         --         --         --          0
+PrivateOrder.WaitTime                           --         --         --         --          0
+PrivateOrder.TranTime                           --         --         --         --          0
+PrivateOrder.OtherTime                          --         --         --         --          0
+PrivateOrder.TotalTime                          --         --         --         --          0
+Match QGB per Order.Queue1.WaitingTime      1.2999     .16713     .00000     10.645       1267    
+Match QGB per Order.Queue2.WaitingTime      3.8692     .52776     .00000     17.169       1267    
+Match QGB per Order.Queue3.WaitingTime      7.6734     .40296     .36195     20.384       1267    
+Hold for Quart Line.Queue.WaitingTime       4.1250     .43976      5.6608E-4 15.861        801    
+Seize 20k Hold Tank.Queue.WaitingTime       .08284     .09980     .00000     11.013        488    
+Hold for Bucket Line.Queue.WaitingTime      .39645     (Insuf)    .01306     .92845         12    
+Hold for Thin.Queue.WaitingTime             4.2205     (Corr)     .00356     19.895       1071    
+Mix and Grind.Queue.WaitingTime             42.385     (Corr)     .00000     117.83       1289    
+Seize 6k.Queue.WaitingTime                  .00000     .00000     .00000     .00000        358    
+Hold for Gallon Line.Queue.WaitingTime      1.6156     .22707     .02040     6.7763        641    
+Seize 8k Hold Tank.Queue.WaitingTime        .00000     .00000     .00000     .00000        419    
+Seize and Delay Buckets.Queue.WaitingTime   .00000     .00000     .00000     .00000        498    
+Hold for Hold Tank.Queue.WaitingTime        3.8553     .35381     .01315     21.150       1181    
+Seize 20k.Queue.WaitingTime                 .00000     .00000     .00000     .00000        376    
+Seize 12k Hold Tank.Queue.WaitingTime       .00000     .00000     .00000     .00000        370    
+Seize and Delay Gallons.Queue.WaitingTime   .00000     .00000     .00000     .00000       1277    
+Seize and Delay Quarts.Queue.WaitingTime    .00000     .00000     .00000     .00000        957    
+Seize 14k.Queue.WaitingTime                 .00000     (Insuf)    .00000     .00000        253    
+Seize 10k.Queue.WaitingTime                 .00000     (Insuf)    .00000     .00000        296    
+Hold for 6k or 10k.Queue.WaitingTime            --         --         --         --          0
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Order.WIP                                   74.151     (Corr)     .00000     157.00     155.00    
+PrivateOrder.WIP                            .00000     (Insuf)    .00000     1.0000     .00000    
+BucketLine.NumberBusy                       .30067     .02971     .00000     2.0000     1.0000    
+BucketLine.NumberScheduled                  2.0000     (Insuf)    2.0000     2.0000     2.0000    
+BucketLine.Utilization                      .15033     .01486     .00000     1.0000     .50000    
+Hold20k.NumberBusy                          3.7241     (Insuf)    .00000     4.0000     3.0000    
+Hold20k.NumberScheduled                     4.0000     (Insuf)    4.0000     4.0000     4.0000    
+Hold20k.Utilization                         .93102     (Insuf)    .00000     1.0000     .75000    
+Hold8k.NumberBusy                           1.8149     (Corr)     .00000     3.0000     3.0000    
+Hold8k.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Hold8k.Utilization                          .60499     (Corr)     .00000     1.0000     1.0000    
+Thin10k.NumberBusy                          .71323     .12976     .00000     2.0000     1.0000    
+Thin10k.NumberScheduled                     2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin10k.Utilization                         .35662     .06488     .00000     1.0000     .50000    
+QuartLine.NumberBusy                        3.7598     (Insuf)    .00000     4.0000     4.0000    
+QuartLine.NumberScheduled                   4.0000     (Insuf)    4.0000     4.0000     4.0000    
+QuartLine.Utilization                       .93997     (Insuf)    .00000     1.0000     1.0000    
+Thin14k.NumberBusy                          1.3906     (Corr)     .00000     2.0000     1.0000    
+Thin14k.NumberScheduled                     2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin14k.Utilization                         .69533     (Corr)     .00000     1.0000     .50000    
+MixAndGrind.NumberBusy                      6.1604     (Insuf)    .00000     7.0000     7.0000    
+MixAndGrind.NumberScheduled                 7.0000     (Insuf)    7.0000     7.0000     7.0000    
+MixAndGrind.Utilization                     .88007     (Insuf)    .00000     1.0000     1.0000    
+Hold12k.NumberBusy                          2.2177     .22871     .00000     4.0000     4.0000    
+Hold12k.NumberScheduled                     4.0000     (Insuf)    4.0000     4.0000     4.0000    
+Hold12k.Utilization                         .55443     .05718     .00000     1.0000     1.0000    
+Thin20k.NumberBusy                          2.5737     (Corr)     .00000     3.0000     3.0000    
+Thin20k.NumberScheduled                     3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Thin20k.Utilization                         .85790     (Corr)     .00000     1.0000     1.0000    
+GallonLine.NumberBusy                       3.0629     .16083     .00000     4.0000     4.0000    
+GallonLine.NumberScheduled                  4.0000     (Insuf)    4.0000     4.0000     4.0000    
+GallonLine.Utilization                      .76573     .04021     .00000     1.0000     1.0000    
+Thin6k.NumberBusy                           .65490     .13661     .00000     2.0000     1.0000    
+Thin6k.NumberScheduled                      2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin6k.Utilization                          .32745     .06831     .00000     1.0000     .50000    
+Match QGB per Order.Queue1.NumberInQueue    1.1461     .19723     .00000     6.0000     1.0000    
+Match QGB per Order.Queue2.NumberInQueue    3.4277     .43811     .00000     10.000     6.0000    
+Match QGB per Order.Queue3.NumberInQueue    6.7884     (Corr)     .00000     11.000     9.0000    
+Hold for Quart Line.Queue.NumberInQueue     2.3034     (Corr)     .00000     7.0000     5.0000    
+Seize 20k Hold Tank.Queue.NumberInQueue     .02807     (Insuf)    .00000     3.0000     .00000    
+Hold for Bucket Line.Queue.NumberInQueue    .00330     (Insuf)    .00000     1.0000     .00000    
+Hold for Thin.Queue.NumberInQueue           3.1477     (Corr)     .00000     7.0000     4.0000    
+Mix and Grind.Queue.NumberInQueue           41.640     (Corr)     .00000     115.00     112.00    
+Seize 6k.Queue.NumberInQueue                .00000     (Insuf)    .00000     .00000     .00000    
+Hold for Gallon Line.Queue.NumberInQueue    .71920     .21783     .00000     7.0000     .00000    
+Seize 8k Hold Tank.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Buckets.Queue.NumberInQueu  .00000     (Insuf)    .00000     .00000     .00000    
+Hold for Hold Tank.Queue.NumberInQueue      3.1826     (Corr)     .00000     9.0000     5.0000    
+Seize 20k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Seize 12k Hold Tank.Queue.NumberInQueue     .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Gallons.Queue.NumberInQueu  .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Quarts.Queue.NumberInQueue  .00000     (Insuf)    .00000     .00000     .00000    
+Seize 14k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Seize 10k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Hold for 6k or 10k.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+Late Orders Private Label                         0  Infinite
+On Time Orders Private Label                      0  Infinite
+Late Orders                                     531  Infinite
+On Time Orders                                  736  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Order.NumberIn                              7961.0    
+Order.NumberOut                             7806.0    
+PrivateOrder.NumberIn                       61.000    
+PrivateOrder.NumberOut                      61.000    
+BucketLine.NumberSeized                     498.00    
+BucketLine.ScheduledUtilization             .15033    
+Hold20k.NumberSeized                        488.00    
+Hold20k.ScheduledUtilization                .93102    
+Hold8k.NumberSeized                         419.00    
+Hold8k.ScheduledUtilization                 .60499    
+Thin10k.NumberSeized                        296.00    
+Thin10k.ScheduledUtilization                .35662    
+QuartLine.NumberSeized                      957.00    
+QuartLine.ScheduledUtilization              .93997    
+Thin14k.NumberSeized                        253.00    
+Thin14k.ScheduledUtilization                .69533    
+MixAndGrind.NumberSeized                    1289.0    
+MixAndGrind.ScheduledUtilization            .88007    
+Hold12k.NumberSeized                        370.00    
+Hold12k.ScheduledUtilization                .55443    
+Thin20k.NumberSeized                        376.00    
+Thin20k.ScheduledUtilization                .85790    
+GallonLine.NumberSeized                     1277.0    
+GallonLine.ScheduledUtilization             .76573    
+Thin6k.NumberSeized                         358.00    
+Thin6k.ScheduledUtilization                 .32745    
+System.NumberOut                            7806.0    
+
+Beginning replication 3 of 5
+
+                                      ARENA Simulation Results
+                                                 LTS
+
+                                  Summary for Replication 3 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/19/2023
+Analyst: LTS                                                         Model revision date: 4/19/2023
+
+Replication ended at time      : 1440.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Throughput Time Not Private Label           90.294     (Corr)     2.6736     243.10       1264    
+Throughput Time Private Label                   --         --         --         --          0
+Order.VATime                                1.7616     (Corr)     .00000     20.149       7798    
+Order.NVATime                               .00000     .00000     .00000     .00000       7798    
+Order.WaitTime                              15.311     (Corr)     .00000     224.26       7798    
+Order.TranTime                              .22830     (Corr)     .00000     2.4223       7798    
+Order.OtherTime                             .15834     (Corr)     .00000     .39981       7798    
+Order.TotalTime                             17.459     (Corr)     .00000     243.43       7798    
+PrivateOrder.VATime                             --         --         --         --          0
+PrivateOrder.NVATime                            --         --         --         --          0
+PrivateOrder.WaitTime                           --         --         --         --          0
+PrivateOrder.TranTime                           --         --         --         --          0
+PrivateOrder.OtherTime                          --         --         --         --          0
+PrivateOrder.TotalTime                          --         --         --         --          0
+Match QGB per Order.Queue1.WaitingTime      1.1282     .16369     .00000     11.268       1264    
+Match QGB per Order.Queue2.WaitingTime      4.4150     .57676     .00000     18.846       1264    
+Match QGB per Order.Queue3.WaitingTime      8.0076     .51740     .25461     22.836       1264    
+Hold for Quart Line.Queue.WaitingTime       4.5651     .39328     .01264     18.451        833    
+Seize 20k Hold Tank.Queue.WaitingTime       .15150     .10427     .00000     8.7893        471    
+Hold for Bucket Line.Queue.WaitingTime      .33955     (Insuf)    .00150     1.3289         12    
+Hold for Thin.Queue.WaitingTime             4.4854     .43116     .01000     20.530       1078    
+Mix and Grind.Queue.WaitingTime             70.904     (Corr)     .00000     155.99       1286    
+Seize 6k.Queue.WaitingTime                  .00000     .00000     .00000     .00000        371    
+Hold for Gallon Line.Queue.WaitingTime      1.3935     (Corr)     .00204     6.0190        598    
+Seize 8k Hold Tank.Queue.WaitingTime        .00000     .00000     .00000     .00000        424    
+Seize and Delay Buckets.Queue.WaitingTime   .00000     .00000     .00000     .00000        491    
+Hold for Hold Tank.Queue.WaitingTime        4.0281     .37882     .02207     17.746       1172    
+Seize 20k.Queue.WaitingTime                 .00000     .00000     .00000     .00000        361    
+Seize 12k Hold Tank.Queue.WaitingTime       .00000     .00000     .00000     .00000        379    
+Seize and Delay Gallons.Queue.WaitingTime   .00000     .00000     .00000     .00000       1273    
+Seize and Delay Quarts.Queue.WaitingTime    .00000     .00000     .00000     .00000        970    
+Seize 14k.Queue.WaitingTime                 .00000     (Insuf)    .00000     .00000        249    
+Seize 10k.Queue.WaitingTime                 .00000     (Insuf)    .00000     .00000        298    
+Hold for 6k or 10k.Queue.WaitingTime            --         --         --         --          0
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Order.WIP                                   103.36     (Corr)     .00000     189.00     189.00    
+PrivateOrder.WIP                            .00000     (Insuf)    .00000     1.0000     .00000    
+BucketLine.NumberBusy                       .28359     .02551     .00000     2.0000     .00000    
+BucketLine.NumberScheduled                  2.0000     (Insuf)    2.0000     2.0000     2.0000    
+BucketLine.Utilization                      .14180     .01275     .00000     1.0000     .00000    
+Hold20k.NumberBusy                          3.7414     (Insuf)    .00000     4.0000     3.0000    
+Hold20k.NumberScheduled                     4.0000     (Insuf)    4.0000     4.0000     4.0000    
+Hold20k.Utilization                         .93536     (Insuf)    .00000     1.0000     .75000    
+Hold8k.NumberBusy                           1.9240     .15630     .00000     3.0000     3.0000    
+Hold8k.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Hold8k.Utilization                          .64134     .05210     .00000     1.0000     1.0000    
+Thin10k.NumberBusy                          .76695     .11650     .00000     2.0000     1.0000    
+Thin10k.NumberScheduled                     2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin10k.Utilization                         .38348     .05825     .00000     1.0000     .50000    
+QuartLine.NumberBusy                        3.8295     (Insuf)    .00000     4.0000     4.0000    
+QuartLine.NumberScheduled                   4.0000     (Insuf)    4.0000     4.0000     4.0000    
+QuartLine.Utilization                       .95738     (Insuf)    .00000     1.0000     1.0000    
+Thin14k.NumberBusy                          1.4438     (Corr)     .00000     2.0000     2.0000    
+Thin14k.NumberScheduled                     2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin14k.Utilization                         .72194     (Corr)     .00000     1.0000     1.0000    
+MixAndGrind.NumberBusy                      6.3624     (Insuf)    .00000     7.0000     7.0000    
+MixAndGrind.NumberScheduled                 7.0000     (Insuf)    7.0000     7.0000     7.0000    
+MixAndGrind.Utilization                     .90893     (Insuf)    .00000     1.0000     1.0000    
+Hold12k.NumberBusy                          2.3442     .24115     .00000     4.0000     4.0000    
+Hold12k.NumberScheduled                     4.0000     (Insuf)    4.0000     4.0000     4.0000    
+Hold12k.Utilization                         .58607     .06029     .00000     1.0000     1.0000    
+Thin20k.NumberBusy                          2.6191     (Insuf)    .00000     3.0000     3.0000    
+Thin20k.NumberScheduled                     3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Thin20k.Utilization                         .87306     (Insuf)    .00000     1.0000     1.0000    
+GallonLine.NumberBusy                       2.9909     .13955     .00000     4.0000     3.0000    
+GallonLine.NumberScheduled                  4.0000     (Insuf)    4.0000     4.0000     4.0000    
+GallonLine.Utilization                      .74773     .03489     .00000     1.0000     .75000    
+Thin6k.NumberBusy                           .59298     .14432     .00000     2.0000     .00000    
+Thin6k.NumberScheduled                      2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin6k.Utilization                          .29649     .07216     .00000     1.0000     .00000    
+Match QGB per Order.Queue1.NumberInQueue    .99137     .14606     .00000     7.0000     1.0000    
+Match QGB per Order.Queue2.NumberInQueue    3.9069     .41709     .00000     10.000     6.0000    
+Match QGB per Order.Queue3.NumberInQueue    7.0719     (Corr)     .00000     11.000     9.0000    
+Hold for Quart Line.Queue.NumberInQueue     2.6587     .36652     .00000     8.0000     4.0000    
+Seize 20k Hold Tank.Queue.NumberInQueue     .04955     (Insuf)    .00000     2.0000     .00000    
+Hold for Bucket Line.Queue.NumberInQueue    .00283     (Insuf)    .00000     1.0000     .00000    
+Hold for Thin.Queue.NumberInQueue           3.3672     (Corr)     .00000     7.0000     3.0000    
+Mix and Grind.Queue.NumberInQueue           69.754     (Corr)     .00000     153.00     149.00    
+Seize 6k.Queue.NumberInQueue                .00000     (Insuf)    .00000     .00000     .00000    
+Hold for Gallon Line.Queue.NumberInQueue    .57872     (Corr)     .00000     7.0000     .00000    
+Seize 8k Hold Tank.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Buckets.Queue.NumberInQueu  .00000     (Insuf)    .00000     .00000     .00000    
+Hold for Hold Tank.Queue.NumberInQueue      3.2819     (Corr)     .00000     8.0000     3.0000    
+Seize 20k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Seize 12k Hold Tank.Queue.NumberInQueue     .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Gallons.Queue.NumberInQueu  .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Quarts.Queue.NumberInQueue  .00000     (Insuf)    .00000     .00000     .00000    
+Seize 14k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Seize 10k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Hold for 6k or 10k.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+Late Orders Private Label                         0  Infinite
+On Time Orders Private Label                      0  Infinite
+Late Orders                                     693  Infinite
+On Time Orders                                  571  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Order.NumberIn                              7987.0    
+Order.NumberOut                             7798.0    
+PrivateOrder.NumberIn                       61.000    
+PrivateOrder.NumberOut                      61.000    
+BucketLine.NumberSeized                     491.00    
+BucketLine.ScheduledUtilization             .14180    
+Hold20k.NumberSeized                        471.00    
+Hold20k.ScheduledUtilization                .93536    
+Hold8k.NumberSeized                         424.00    
+Hold8k.ScheduledUtilization                 .64134    
+Thin10k.NumberSeized                        298.00    
+Thin10k.ScheduledUtilization                .38348    
+QuartLine.NumberSeized                      970.00    
+QuartLine.ScheduledUtilization              .95738    
+Thin14k.NumberSeized                        249.00    
+Thin14k.ScheduledUtilization                .72194    
+MixAndGrind.NumberSeized                    1286.0    
+MixAndGrind.ScheduledUtilization            .90893    
+Hold12k.NumberSeized                        379.00    
+Hold12k.ScheduledUtilization                .58607    
+Thin20k.NumberSeized                        361.00    
+Thin20k.ScheduledUtilization                .87306    
+GallonLine.NumberSeized                     1273.0    
+GallonLine.ScheduledUtilization             .74773    
+Thin6k.NumberSeized                         371.00    
+Thin6k.ScheduledUtilization                 .29649    
+System.NumberOut                            7798.0    
+
+Beginning replication 4 of 5
+
+                                      ARENA Simulation Results
+                                                 LTS
+
+                                  Summary for Replication 4 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/19/2023
+Analyst: LTS                                                         Model revision date: 4/19/2023
+
+Replication ended at time      : 1440.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Throughput Time Not Private Label           53.247     (Corr)     3.1881     144.67       1316    
+Throughput Time Private Label                   --         --         --         --          0
+Order.VATime                                1.7488     .04164     .00000     21.201       8143    
+Order.NVATime                               .00000     .00000     .00000     .00000       8143    
+Order.WaitTime                              9.1441     (Corr)     .00000     138.79       8143    
+Order.TranTime                              .22975     .00496     .00000     2.4376       8143    
+Order.OtherTime                             .15881     .00152     .00000     .40000       8143    
+Order.TotalTime                             11.281     (Corr)     .00000     144.67       8143    
+PrivateOrder.VATime                             --         --         --         --          0
+PrivateOrder.NVATime                            --         --         --         --          0
+PrivateOrder.WaitTime                           --         --         --         --          0
+PrivateOrder.TranTime                           --         --         --         --          0
+PrivateOrder.OtherTime                          --         --         --         --          0
+PrivateOrder.TotalTime                          --         --         --         --          0
+Match QGB per Order.Queue1.WaitingTime      1.3692     .17900     .00000     12.107       1316    
+Match QGB per Order.Queue2.WaitingTime      3.7204     .46283     .00000     20.587       1316    
+Match QGB per Order.Queue3.WaitingTime      7.5319     .34124     .24989     23.428       1316    
+Hold for Quart Line.Queue.WaitingTime       3.9518     .46325     .00471     15.899        825    
+Seize 20k Hold Tank.Queue.WaitingTime       .06636     .04373     .00000     6.0256        516    
+Hold for Bucket Line.Queue.WaitingTime      .36727     (Insuf)    .00160     1.1943         26    
+Hold for Thin.Queue.WaitingTime             3.9223     .38309     .00869     20.215       1240    
+Mix and Grind.Queue.WaitingTime             33.920     (Corr)     .00000     87.768       1337    
+Seize 6k.Queue.WaitingTime                  .00000     .00000     .00000     .00000        408    
+Hold for Gallon Line.Queue.WaitingTime      1.5866     .23423      2.0516E-4 8.9117        721    
+Seize 8k Hold Tank.Queue.WaitingTime        .00000     .00000     .00000     .00000        434    
+Seize and Delay Buckets.Queue.WaitingTime   .00000     .00000     .00000     .00000        557    
+Hold for Hold Tank.Queue.WaitingTime        3.6780     .20909     .00798     15.606       1287    
+Seize 20k.Queue.WaitingTime                 .00000     .00000     .00000     .00000        385    
+Seize 12k Hold Tank.Queue.WaitingTime       .00000     .00000     .00000     .00000        376    
+Seize and Delay Gallons.Queue.WaitingTime   .00000     .00000     .00000     .00000       1325    
+Seize and Delay Quarts.Queue.WaitingTime    .00000     .00000     .00000     .00000        989    
+Seize 14k.Queue.WaitingTime                 .00000     (Insuf)    .00000     .00000        259    
+Seize 10k.Queue.WaitingTime                 .00000     (Insuf)    .00000     .00000        278    
+Hold for 6k or 10k.Queue.WaitingTime            --         --         --         --          0
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Order.WIP                                   66.817     (Corr)     .00000     123.00     123.00    
+PrivateOrder.WIP                            .00000     (Insuf)    .00000     1.0000     .00000    
+BucketLine.NumberBusy                       .33904     .02454     .00000     2.0000     .00000    
+BucketLine.NumberScheduled                  2.0000     (Insuf)    2.0000     2.0000     2.0000    
+BucketLine.Utilization                      .16952     .01227     .00000     1.0000     .00000    
+Hold20k.NumberBusy                          3.8374     (Insuf)    .00000     4.0000     4.0000    
+Hold20k.NumberScheduled                     4.0000     (Insuf)    4.0000     4.0000     4.0000    
+Hold20k.Utilization                         .95936     (Insuf)    .00000     1.0000     1.0000    
+Hold8k.NumberBusy                           1.8949     .14448     .00000     3.0000     3.0000    
+Hold8k.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Hold8k.Utilization                          .63166     .04816     .00000     1.0000     1.0000    
+Thin10k.NumberBusy                          .65631     .10847     .00000     2.0000     .00000    
+Thin10k.NumberScheduled                     2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin10k.Utilization                         .32815     .05424     .00000     1.0000     .00000    
+QuartLine.NumberBusy                        3.8487     (Corr)     .00000     4.0000     4.0000    
+QuartLine.NumberScheduled                   4.0000     (Insuf)    4.0000     4.0000     4.0000    
+QuartLine.Utilization                       .96220     (Corr)     .00000     1.0000     1.0000    
+Thin14k.NumberBusy                          1.4285     .11993     .00000     2.0000     2.0000    
+Thin14k.NumberScheduled                     2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin14k.Utilization                         .71428     .05996     .00000     1.0000     1.0000    
+MixAndGrind.NumberBusy                      6.5178     (Insuf)    .00000     7.0000     7.0000    
+MixAndGrind.NumberScheduled                 7.0000     (Insuf)    7.0000     7.0000     7.0000    
+MixAndGrind.Utilization                     .93112     (Insuf)    .00000     1.0000     1.0000    
+Hold12k.NumberBusy                          2.2164     .27418     .00000     4.0000     3.0000    
+Hold12k.NumberScheduled                     4.0000     (Insuf)    4.0000     4.0000     4.0000    
+Hold12k.Utilization                         .55410     .06855     .00000     1.0000     .75000    
+Thin20k.NumberBusy                          2.8096     (Insuf)    .00000     3.0000     3.0000    
+Thin20k.NumberScheduled                     3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Thin20k.Utilization                         .93656     (Insuf)    .00000     1.0000     1.0000    
+GallonLine.NumberBusy                       3.1618     .11245     .00000     4.0000     2.0000    
+GallonLine.NumberScheduled                  4.0000     (Insuf)    4.0000     4.0000     4.0000    
+GallonLine.Utilization                      .79047     .02811     .00000     1.0000     .50000    
+Thin6k.NumberBusy                           .62562     .11488     .00000     2.0000     .00000    
+Thin6k.NumberScheduled                      2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin6k.Utilization                          .31281     .05744     .00000     1.0000     .00000    
+Match QGB per Order.Queue1.NumberInQueue    1.2527     .17149     .00000     8.0000     1.0000    
+Match QGB per Order.Queue2.NumberInQueue    3.4269     .40904     .00000     10.000     7.0000    
+Match QGB per Order.Queue3.NumberInQueue    6.9239     .38002     .00000     11.000     9.0000    
+Hold for Quart Line.Queue.NumberInQueue     2.2800     .36185     .00000     7.0000     4.0000    
+Seize 20k Hold Tank.Queue.NumberInQueue     .02378     (Insuf)    .00000     1.0000     .00000    
+Hold for Bucket Line.Queue.NumberInQueue    .00663     (Insuf)    .00000     2.0000     .00000    
+Hold for Thin.Queue.NumberInQueue           3.3888     (Corr)     .00000     7.0000     4.0000    
+Mix and Grind.Queue.NumberInQueue           33.260     (Corr)     .00000     84.000     84.000    
+Seize 6k.Queue.NumberInQueue                .00000     (Insuf)    .00000     .00000     .00000    
+Hold for Gallon Line.Queue.NumberInQueue    .79443     .17634     .00000     7.0000     .00000    
+Seize 8k Hold Tank.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Buckets.Queue.NumberInQueu  .00000     (Insuf)    .00000     .00000     .00000    
+Hold for Hold Tank.Queue.NumberInQueue      3.2945     .26331     .00000     9.0000     3.0000    
+Seize 20k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Seize 12k Hold Tank.Queue.NumberInQueue     .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Gallons.Queue.NumberInQueu  .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Quarts.Queue.NumberInQueue  .00000     (Insuf)    .00000     .00000     .00000    
+Seize 14k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Seize 10k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Hold for 6k or 10k.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+Late Orders Private Label                         0  Infinite
+On Time Orders Private Label                      0  Infinite
+Late Orders                                     380  Infinite
+On Time Orders                                  936  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Order.NumberIn                              8266.0    
+Order.NumberOut                             8143.0    
+PrivateOrder.NumberIn                       61.000    
+PrivateOrder.NumberOut                      61.000    
+BucketLine.NumberSeized                     557.00    
+BucketLine.ScheduledUtilization             .16952    
+Hold20k.NumberSeized                        516.00    
+Hold20k.ScheduledUtilization                .95936    
+Hold8k.NumberSeized                         434.00    
+Hold8k.ScheduledUtilization                 .63166    
+Thin10k.NumberSeized                        278.00    
+Thin10k.ScheduledUtilization                .32815    
+QuartLine.NumberSeized                      989.00    
+QuartLine.ScheduledUtilization              .96220    
+Thin14k.NumberSeized                        259.00    
+Thin14k.ScheduledUtilization                .71428    
+MixAndGrind.NumberSeized                    1337.0    
+MixAndGrind.ScheduledUtilization            .93112    
+Hold12k.NumberSeized                        376.00    
+Hold12k.ScheduledUtilization                .55410    
+Thin20k.NumberSeized                        385.00    
+Thin20k.ScheduledUtilization                .93656    
+GallonLine.NumberSeized                     1325.0    
+GallonLine.ScheduledUtilization             .79047    
+Thin6k.NumberSeized                         408.00    
+Thin6k.ScheduledUtilization                 .31281    
+System.NumberOut                            8143.0    
+
+Beginning replication 5 of 5
+
+                                      ARENA Simulation Results
+                                                 LTS
+
+                                  Summary for Replication 5 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/19/2023
+Analyst: LTS                                                         Model revision date: 4/19/2023
+
+Replication ended at time      : 1440.0 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Throughput Time Not Private Label           55.124     (Corr)     2.5865     138.55       1330    
+Throughput Time Private Label                   --         --         --         --          0
+Order.VATime                                1.7475     .04437     .00000     20.762       8175    
+Order.NVATime                               .00000     .00000     .00000     .00000       8175    
+Order.WaitTime                              9.4683     (Corr)     .00000     122.59       8175    
+Order.TranTime                              .23114     .00568     .00000     2.4349       8175    
+Order.OtherTime                             .15765     .00221     .00000     .40000       8175    
+Order.TotalTime                             11.604     (Corr)     .00000     138.88       8175    
+PrivateOrder.VATime                             --         --         --         --          0
+PrivateOrder.NVATime                            --         --         --         --          0
+PrivateOrder.WaitTime                           --         --         --         --          0
+PrivateOrder.TranTime                           --         --         --         --          0
+PrivateOrder.OtherTime                          --         --         --         --          0
+PrivateOrder.TotalTime                          --         --         --         --          0
+Match QGB per Order.Queue1.WaitingTime      1.4493     .28675     .00000     10.998       1330    
+Match QGB per Order.Queue2.WaitingTime      3.2555     .74503     .00000     19.454       1330    
+Match QGB per Order.Queue3.WaitingTime      7.3942     .51131     .23406     24.024       1330    
+Hold for Quart Line.Queue.WaitingTime       3.7605     .51407     .00162     15.407        828    
+Seize 20k Hold Tank.Queue.WaitingTime       .11708     (Corr)     .00000     10.604        521    
+Hold for Bucket Line.Queue.WaitingTime      .29930     (Insuf)    .08509     .72892         18    
+Hold for Thin.Queue.WaitingTime             3.7649     .50726     .00208     16.600       1166    
+Mix and Grind.Queue.WaitingTime             36.158     (Corr)     .00000     83.385       1349    
+Seize 6k.Queue.WaitingTime                  .00000     .00000     .00000     .00000        389    
+Hold for Gallon Line.Queue.WaitingTime      1.8665     .32186      3.7851E-4 10.765        785    
+Seize 8k Hold Tank.Queue.WaitingTime        .00000     .00000     .00000     .00000        434    
+Seize and Delay Buckets.Queue.WaitingTime   .00000     .00000     .00000     .00000        510    
+Hold for Hold Tank.Queue.WaitingTime        3.5615     .26818     .00657     15.740       1281    
+Seize 20k.Queue.WaitingTime                 .00000     .00000     .00000     .00000        389    
+Seize 12k Hold Tank.Queue.WaitingTime       .00000     .00000     .00000     .00000        383    
+Seize and Delay Gallons.Queue.WaitingTime   .00000     .00000     .00000     .00000       1338    
+Seize and Delay Quarts.Queue.WaitingTime    .00000     .00000     .00000     .00000       1002    
+Seize 14k.Queue.WaitingTime                 .00000     (Insuf)    .00000     .00000        260    
+Seize 10k.Queue.WaitingTime                 .00000     (Insuf)    .00000     .00000        306    
+Hold for 6k or 10k.Queue.WaitingTime            --         --         --         --          0
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Order.WIP                                   67.953     (Corr)     .00000     126.00     104.00    
+PrivateOrder.WIP                            .00000     (Insuf)    .00000     1.0000     .00000    
+BucketLine.NumberBusy                       .30460     .02841     .00000     2.0000     1.0000    
+BucketLine.NumberScheduled                  2.0000     (Insuf)    2.0000     2.0000     2.0000    
+BucketLine.Utilization                      .15230     .01421     .00000     1.0000     .50000    
+Hold20k.NumberBusy                          3.8571     (Insuf)    .00000     4.0000     4.0000    
+Hold20k.NumberScheduled                     4.0000     (Insuf)    4.0000     4.0000     4.0000    
+Hold20k.Utilization                         .96428     (Insuf)    .00000     1.0000     1.0000    
+Hold8k.NumberBusy                           1.8099     .20534     .00000     3.0000     2.0000    
+Hold8k.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Hold8k.Utilization                          .60330     .06845     .00000     1.0000     .66667    
+Thin10k.NumberBusy                          .64842     .13644     .00000     2.0000     1.0000    
+Thin10k.NumberScheduled                     2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin10k.Utilization                         .32421     .06822     .00000     1.0000     .50000    
+QuartLine.NumberBusy                        3.7874     .08397     .00000     4.0000     4.0000    
+QuartLine.NumberScheduled                   4.0000     (Insuf)    4.0000     4.0000     4.0000    
+QuartLine.Utilization                       .94687     .02099     .00000     1.0000     1.0000    
+Thin14k.NumberBusy                          1.4240     .12849     .00000     2.0000     2.0000    
+Thin14k.NumberScheduled                     2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin14k.Utilization                         .71202     .06425     .00000     1.0000     1.0000    
+MixAndGrind.NumberBusy                      6.1985     (Insuf)    .00000     7.0000     7.0000    
+MixAndGrind.NumberScheduled                 7.0000     (Insuf)    7.0000     7.0000     7.0000    
+MixAndGrind.Utilization                     .88550     (Insuf)    .00000     1.0000     1.0000    
+Hold12k.NumberBusy                          2.2026     .32120     .00000     4.0000     2.0000    
+Hold12k.NumberScheduled                     4.0000     (Insuf)    4.0000     4.0000     4.0000    
+Hold12k.Utilization                         .55065     .08030     .00000     1.0000     .50000    
+Thin20k.NumberBusy                          2.7496     (Insuf)    .00000     3.0000     3.0000    
+Thin20k.NumberScheduled                     3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Thin20k.Utilization                         .91656     (Insuf)    .00000     1.0000     1.0000    
+GallonLine.NumberBusy                       3.2531     .17697     .00000     4.0000     2.0000    
+GallonLine.NumberScheduled                  4.0000     (Insuf)    4.0000     4.0000     4.0000    
+GallonLine.Utilization                      .81329     .04424     .00000     1.0000     .50000    
+Thin6k.NumberBusy                           .61467     .12159     .00000     2.0000     .00000    
+Thin6k.NumberScheduled                      2.0000     (Insuf)    2.0000     2.0000     2.0000    
+Thin6k.Utilization                          .30734     .06080     .00000     1.0000     .00000    
+Match QGB per Order.Queue1.NumberInQueue    1.3386     .31363     .00000     8.0000     .00000    
+Match QGB per Order.Queue2.NumberInQueue    3.0255     .54236     .00000     11.000     7.0000    
+Match QGB per Order.Queue3.NumberInQueue    6.8618     .48708     .00000     11.000     7.0000    
+Hold for Quart Line.Queue.NumberInQueue     2.1690     .44587     .00000     8.0000     4.0000    
+Seize 20k Hold Tank.Queue.NumberInQueue     .04236     (Insuf)    .00000     2.0000     .00000    
+Hold for Bucket Line.Queue.NumberInQueue    .00374     (Insuf)    .00000     1.0000     .00000    
+Hold for Thin.Queue.NumberInQueue           3.0562     (Corr)     .00000     7.0000     3.0000    
+Mix and Grind.Queue.NumberInQueue           35.073     (Corr)     .00000     94.000     68.000    
+Seize 6k.Queue.NumberInQueue                .00000     (Insuf)    .00000     .00000     .00000    
+Hold for Gallon Line.Queue.NumberInQueue    1.0175     .38839     .00000     7.0000     .00000    
+Seize 8k Hold Tank.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Buckets.Queue.NumberInQueu  .00000     (Insuf)    .00000     .00000     .00000    
+Hold for Hold Tank.Queue.NumberInQueue      3.1710     .28966     .00000     9.0000     3.0000    
+Seize 20k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Seize 12k Hold Tank.Queue.NumberInQueue     .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Gallons.Queue.NumberInQueu  .00000     (Insuf)    .00000     .00000     .00000    
+Seize and Delay Quarts.Queue.NumberInQueue  .00000     (Insuf)    .00000     .00000     .00000    
+Seize 14k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Seize 10k.Queue.NumberInQueue               .00000     (Insuf)    .00000     .00000     .00000    
+Hold for 6k or 10k.Queue.NumberInQueue      .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+Late Orders Private Label                         0  Infinite
+On Time Orders Private Label                      0  Infinite
+Late Orders                                     456  Infinite
+On Time Orders                                  874  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Order.NumberIn                              8279.0    
+Order.NumberOut                             8175.0    
+PrivateOrder.NumberIn                       61.000    
+PrivateOrder.NumberOut                      61.000    
+BucketLine.NumberSeized                     510.00    
+BucketLine.ScheduledUtilization             .15230    
+Hold20k.NumberSeized                        521.00    
+Hold20k.ScheduledUtilization                .96428    
+Hold8k.NumberSeized                         434.00    
+Hold8k.ScheduledUtilization                 .60330    
+Thin10k.NumberSeized                        306.00    
+Thin10k.ScheduledUtilization                .32421    
+QuartLine.NumberSeized                      1002.0    
+QuartLine.ScheduledUtilization              .94687    
+Thin14k.NumberSeized                        260.00    
+Thin14k.ScheduledUtilization                .71202    
+MixAndGrind.NumberSeized                    1349.0    
+MixAndGrind.ScheduledUtilization            .88550    
+Hold12k.NumberSeized                        383.00    
+Hold12k.ScheduledUtilization                .55065    
+Thin20k.NumberSeized                        389.00    
+Thin20k.ScheduledUtilization                .91656    
+GallonLine.NumberSeized                     1338.0    
+GallonLine.ScheduledUtilization             .81329    
+Thin6k.NumberSeized                         389.00    
+Thin6k.ScheduledUtilization                 .30734    
+System.NumberOut                            8175.0    
+
+
+                                      ARENA Simulation Results
+                                                 LTS
+
+                                  Output Summary for 5 Replications
+
+Project: Unnamed Project                                             Run execution date : 4/19/2023
+Analyst: LTS                                                         Model revision date: 4/19/2023
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Order.NumberIn                              8175.0     234.80     7961.0     8382.0     5
+Order.NumberOut                             8031.0     262.62     7798.0     8233.0     5
+PrivateOrder.NumberIn                       61.000     .00000     61.000     61.000     5
+PrivateOrder.NumberOut                      61.000     .00000     61.000     61.000     5
+BucketLine.NumberSeized                     515.20     32.127     491.00     557.00     5
+BucketLine.ScheduledUtilization             .15318     .01252     .14180     .16952     5
+Hold20k.NumberSeized                        499.00     25.427     471.00     521.00     5
+Hold20k.ScheduledUtilization                .94808     .01807     .93102     .96428     5
+Hold8k.NumberSeized                         429.60     9.5600     419.00     437.00     5
+Hold8k.ScheduledUtilization                 .63242     .03936     .60330     .68079     5
+Thin10k.NumberSeized                        296.80     14.220     278.00     306.00     5
+Thin10k.ScheduledUtilization                .35563     .03632     .32421     .38570     5
+QuartLine.NumberSeized                      986.40     28.750     957.00     1014.0     5
+QuartLine.ScheduledUtilization              .95491     .01418     .93997     .96812     5
+Thin14k.NumberSeized                        256.40     6.4269     249.00     261.00     5
+Thin14k.ScheduledUtilization                .71073     .01206     .69533     .72194     5
+MixAndGrind.NumberSeized                    1323.2     41.271     1286.0     1355.0     5
+MixAndGrind.ScheduledUtilization            .91863     .05405     .88007     .98753     5
+Hold12k.NumberSeized                        383.00     17.666     370.00     407.00     5
+Hold12k.ScheduledUtilization                .57554     .04333     .55065     .63243     5
+Thin20k.NumberSeized                        378.80     13.667     361.00     389.00     5
+Thin20k.ScheduledUtilization                .90795     .05153     .85790     .95568     5
+GallonLine.NumberSeized                     1311.2     41.865     1273.0     1343.0     5
+GallonLine.ScheduledUtilization             .78377     .03320     .74773     .81329     5
+Thin6k.NumberSeized                         385.00     25.336     358.00     408.00     5
+Thin6k.ScheduledUtilization                 .32392     .03840     .29649     .37553     5
+System.NumberOut                            8031.0     262.62     7798.0     8233.0     5
+
+Simulation run time: 0.55 minutes.
+Simulation run complete.
